@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ivettemedia.com/sitemap.xml
+
+# Block admin/private paths if added later
+Disallow: /admin/
+Disallow: /private/

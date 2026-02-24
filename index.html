@@ -3,10 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brands that Stick and Click – Ivette Media</title>
+<meta name="description" content="Ivette Media — Brands that Stick and Click. Nairobi-based PR, Communication and Marketing Agency.">
+<meta property="og:title" content="Brands that Stick and Click | Ivette Media">
+<meta property="og:image" content="logo.jpg">
+<meta name="theme-color" content="#3d1a5e">
+<link rel="manifest" href="manifest.json">
+<title>Brands that Stick and Click | Ivette Media</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -364,20 +368,122 @@ section{padding:90px 0}
   .footer-bottom{flex-direction:column;text-align:center}
 }
 </style>
+<style>
+/* ── PORTFOLIO ── */
+.portfolio-filter{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:48px}
+.pf-btn{padding:9px 22px;border-radius:50px;font-size:.85rem;font-weight:600;border:1.5px solid var(--border);background:var(--card);color:var(--txt2);cursor:pointer;transition:var(--t);font-family:'DM Sans',sans-serif}
+.pf-btn:hover,.pf-btn.active{background:var(--purple);color:#fff;border-color:var(--purple)}
+[data-theme=dark] .pf-btn:hover,[data-theme=dark] .pf-btn.active{background:var(--teal);border-color:var(--teal)}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pcard{border-radius:var(--r);overflow:hidden;background:var(--card);border:1px solid var(--border);transition:transform var(--t),box-shadow var(--t);cursor:pointer}
+.pcard:hover{transform:translateY(-8px);box-shadow:var(--shadowL)}
+.pcard-visual{height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;overflow:hidden}
+.pv1{background:linear-gradient(135deg,#3d1a5e,#5b2d8e)}
+.pv2{background:linear-gradient(135deg,#00a8b5,#006b75)}
+.pv3{background:linear-gradient(135deg,#e91e8c,#9c0060)}
+.pv4{background:linear-gradient(135deg,#f57c00,#bf5400)}
+.pv5{background:linear-gradient(135deg,#3d1a5e,#00a8b5)}
+.pv6{background:linear-gradient(135deg,#f5c518,#e91e8c)}
+.pcard-body{padding:22px}
+.pcard-tag{font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--teal);margin-bottom:8px;display:block}
+.pcard-body h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--txt);margin-bottom:8px;line-height:1.3}
+.pcard-body p{color:var(--txt2);font-size:.85rem;line-height:1.55;margin-bottom:14px}
+.pcard-result{display:inline-flex;align-items:center;gap:6px;background:var(--bg3);border-radius:50px;padding:5px 13px;font-size:.78rem;font-weight:600;color:var(--purple)}
+[data-theme=dark] .pcard-result{color:var(--teal)}
+.pcard[data-cat].hidden{display:none}
 
+/* ── TESTIMONIALS ── */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tcard{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:30px 26px;position:relative;transition:transform var(--t),box-shadow var(--t)}
+.tcard:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.tcard-quote{font-size:3rem;color:var(--purple);line-height:1;margin-bottom:12px;opacity:.3;font-family:'Playfair Display',serif}
+[data-theme=dark] .tcard-quote{color:var(--teal)}
+.tcard p{color:var(--txt2);font-size:.92rem;line-height:1.7;margin-bottom:20px;font-style:italic}
+.tcard-author{display:flex;align-items:center;gap:12px}
+.tcard-avatar{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.88rem;color:#fff;flex-shrink:0}
+.ta1{background:var(--purple)} .ta2{background:var(--teal)} .ta3{background:var(--pink)}
+.ta4{background:var(--orange)} .ta5{background:linear-gradient(135deg,var(--purple),var(--teal))} .ta6{background:var(--pink)}
+.tcard-name{font-weight:700;color:var(--txt);font-size:.9rem}
+.tcard-role{color:var(--txt3);font-size:.78rem}
+
+/* ── BLOG ── */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.bcard{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:transform var(--t),box-shadow var(--t);text-decoration:none;display:block}
+.bcard:hover{transform:translateY(-8px);box-shadow:var(--shadowL)}
+.bcard-visual{height:180px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative}
+.bv1{background:linear-gradient(135deg,#3d1a5e22,#5b2d8e44);border-bottom:3px solid var(--purple)}
+.bv2{background:linear-gradient(135deg,#00a8b522,#006b7544);border-bottom:3px solid var(--teal)}
+.bv3{background:linear-gradient(135deg,#e91e8c22,#9c006044);border-bottom:3px solid var(--pink)}
+.bv4{background:linear-gradient(135deg,#f5c51822,#f57c0044);border-bottom:3px solid var(--gold)}
+.bv5{background:linear-gradient(135deg,#3d1a5e22,#00a8b544);border-bottom:3px solid var(--teal)}
+.bv6{background:linear-gradient(135deg,#f57c0022,#e91e8c44);border-bottom:3px solid var(--orange)}
+.bcard-body{padding:22px}
+.bcard-meta{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.bcard-cat{font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--teal)}
+.bcard-date{font-size:.75rem;color:var(--txt3)}
+.bcard-body h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--txt);margin-bottom:8px;line-height:1.35}
+.bcard-body p{color:var(--txt2);font-size:.84rem;line-height:1.6;margin-bottom:14px}
+.bcard-read{color:var(--purple);font-size:.82rem;font-weight:600;display:inline-flex;align-items:center;gap:4px;transition:gap var(--t)}
+[data-theme=dark] .bcard-read{color:var(--teal)}
+.bcard:hover .bcard-read{gap:8px}
+.newsletter-box{background:var(--purple);border-radius:var(--r);padding:48px;text-align:center;margin-top:60px}
+.newsletter-box h3{font-family:'Playfair Display',serif;font-size:1.8rem;color:#fff;margin-bottom:10px}
+.newsletter-box p{color:rgba(255,255,255,.75);margin-bottom:24px}
+.newsletter-form{display:flex;gap:12px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.newsletter-form input{flex:1;min-width:220px;padding:12px 18px;border-radius:50px;border:none;font-family:'DM Sans',sans-serif;font-size:.95rem;outline:none}
+.newsletter-form button{background:var(--gold);color:var(--purple);border:none;padding:12px 24px;border-radius:50px;font-weight:700;font-size:.9rem;cursor:pointer;transition:var(--t);font-family:'DM Sans',sans-serif;white-space:nowrap}
+.newsletter-form button:hover{background:#ffd740;transform:translateY(-2px)}
+
+/* ── FAQ ── */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:960px;margin:0 auto}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;transition:box-shadow var(--t)}
+.faq-item:hover{box-shadow:var(--shadow)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 22px;cursor:pointer;gap:12px;user-select:none}
+.faq-q h4{font-weight:600;color:var(--txt);font-size:.93rem;line-height:1.4}
+.faq-icon{width:24px;height:24px;border-radius:50%;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;transition:transform var(--t),background var(--t)}
+.faq-item.open .faq-icon{transform:rotate(45deg);background:var(--purple);color:#fff}
+[data-theme=dark] .faq-item.open .faq-icon{background:var(--teal)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease}
+.faq-item.open .faq-a{max-height:300px}
+.faq-a p{padding:0 22px 20px;color:var(--txt2);font-size:.88rem;line-height:1.7}
+.faq-cats{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:44px}
+.faq-cat-btn{padding:8px 20px;border-radius:50px;font-size:.83rem;font-weight:600;border:1.5px solid var(--border);background:var(--card);color:var(--txt2);cursor:pointer;transition:var(--t);font-family:'DM Sans',sans-serif}
+.faq-cat-btn:hover,.faq-cat-btn.active{background:var(--purple);color:#fff;border-color:var(--purple)}
+[data-theme=dark] .faq-cat-btn:hover,[data-theme=dark] .faq-cat-btn.active{background:var(--teal);border-color:var(--teal)}
+
+/* ── 404 ── */
+.notfound{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--bg);padding:40px 24px}
+.nf-inner{max-width:540px}
+.nf-code{font-family:'Playfair Display',serif;font-size:9rem;font-weight:900;color:var(--purple);line-height:1;opacity:.12;display:block;margin-bottom:-40px}
+[data-theme=dark] .nf-code{color:var(--teal)}
+.nf-icon{font-size:5rem;display:block;margin-bottom:20px}
+.nf-inner h1{font-family:'Playfair Display',serif;font-size:2.4rem;color:var(--txt);margin-bottom:14px}
+.nf-inner p{color:var(--txt2);font-size:1.05rem;margin-bottom:32px;line-height:1.7}
+.nf-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+@media(max-width:1024px){
+  .portfolio-grid{grid-template-columns:repeat(2,1fr)}
+  .testi-grid{grid-template-columns:repeat(2,1fr)}
+  .blog-grid{grid-template-columns:repeat(2,1fr)}
+  .faq-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .portfolio-grid{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .blog-grid{grid-template-columns:1fr}
+  .nf-code{font-size:6rem}
+}
+</style>
 </head>
 <body>
-
 <nav class="nav" id="mainNav">
   <a href="index.html" class="nav-logo"><img src="logo.jpg" alt="Ivette Media"></a>
-  <ul class="nav-links"><li><a href="index.html" class="active">Home</a></li><li><a href="about.html" >About</a></li><li><a href="services.html" >Services</a></li><li><a href="contact.html" >Contact</a></li></ul>
+  <ul class="nav-links"><li><a href="index.html" class="active">Home</a></li><li><a href="about.html" >About</a></li><li><a href="services.html" >Services</a></li><li><a href="portfolio.html" >Portfolio</a></li><li><a href="blog.html" >Blog</a></li><li><a href="faq.html" >FAQ</a></li><li><a href="contact.html" >Contact</a></li></ul>
   <a href="contact.html" class="nav-cta">Let's Talk</a>
   <button class="dm-toggle" aria-label="Toggle dark mode"><span class="dm-icon sun">☀️</span><span class="dm-icon moon">🌙</span></button>
   <button class="hamburger" id="ham" aria-label="menu"><span></span><span></span><span></span></button>
 </nav>
-<div class="mobile-nav" id="mobMenu"><a href="index.html" onclick="closeMob()" class="active">Home</a><a href="about.html" onclick="closeMob()" >About</a><a href="services.html" onclick="closeMob()" >Services</a><a href="contact.html" onclick="closeMob()" >Contact</a></div>
-
-
+<div class="mobile-nav" id="mobMenu"><a href="index.html" onclick="closeMob()">Home</a><a href="about.html" onclick="closeMob()">About</a><a href="services.html" onclick="closeMob()">Services</a><a href="portfolio.html" onclick="closeMob()">Portfolio</a><a href="blog.html" onclick="closeMob()">Blog</a><a href="faq.html" onclick="closeMob()">FAQ</a><a href="contact.html" onclick="closeMob()">Contact</a></div>
 <section class="hero">
   <div class="hero-blob hb1"></div>
   <div class="hero-blob hb2"></div>
@@ -492,8 +598,6 @@ section{padding:90px 0}
     <a href="contact.html" class="btn btn-white">Get in Touch</a>
   </div>
 </div>
-
-
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
@@ -502,33 +606,26 @@ section{padding:90px 0}
         <p class="footer-tag">Brands that stick and click</p>
         <div class="socials">
           <a href="https://facebook.com/ivettemedia" target="_blank" rel="noopener" class="s-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-          <a href="https://www.instagram.com/ivette.media" target="_blank" rel="noopener" class="s-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-          <a href="https://linkedin.com/company/ivette-media" target="_blank" rel="noopener" class="s-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7H10V9h4v1.5A6 6 0 0 1 16 8zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://instagram.com/ivettemedia" target="_blank" rel="noopener" class="s-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://linkedin.com/company/ivettemedia" target="_blank" rel="noopener" class="s-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7H10V9h4v1.5A6 6 0 0 1 16 8zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
           <a href="https://twitter.com/ivettemedia" target="_blank" rel="noopener" class="s-icon" aria-label="X/Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
           <a href="https://youtube.com/@ivettemedia" target="_blank" rel="noopener" class="s-icon" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
         </div>
       </div>
-      <div>
-        <h5>Navigate</h5>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Services</h5>
-        <ul>
-          <li><a href="services.html#marketing">Marketing</a></li>
-          <li><a href="services.html#communication">Communication</a></li>
-          <li><a href="services.html#microfilms">Advocacy Microfilms</a></li>
-          <li><a href="services.html#training">Training & Capacity</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h5>Get in Touch</h5>
-        <p><a href="mailto:ivettemediake@gmail.com">ivettemediake@gmail.com</a></p>
+      <div><h5>Navigate</h5><ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li><li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div><h5>Services</h5><ul>
+        <li><a href="services.html#marketing">Marketing</a></li>
+        <li><a href="services.html#communication">Communication</a></li>
+        <li><a href="services.html#microfilms">Advocacy Microfilms</a></li>
+        <li><a href="services.html#training">Training &amp; Capacity</a></li>
+      </ul></div>
+      <div class="footer-contact"><h5>Get in Touch</h5>
+        <p><a href="mailto:ivettemediake&#64;gmail&#46;com">ivettemediake&#64;gmail&#46;com</a></p>
         <p><a href="tel:+254726953309">+254 726 95 33 09</a></p>
         <p><a href="tel:+254702338903">+254 702 33 89 03</a></p>
         <p style="margin-top:10px;color:rgba(255,255,255,.35);font-size:.82rem">Nairobi, Kenya</p>
@@ -540,73 +637,147 @@ section{padding:90px 0}
     </div>
   </div>
 </footer>
-
-
 <script>
-// Dark mode
-const root = document.documentElement;
-const stored = localStorage.getItem('im-theme') || 'light';
-root.setAttribute('data-theme', stored);
+(function() {
+  // ── 1. DARK MODE (runs immediately, before render) ──
+  var root = document.documentElement;
+  var saved = localStorage.getItem('im-theme') || 'light';
+  root.setAttribute('data-theme', saved);
 
-function toggleDM() {
-  const t = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-  root.setAttribute('data-theme', t);
-  localStorage.setItem('im-theme', t);
-}
-document.querySelectorAll('.dm-toggle').forEach(b => b.addEventListener('click', toggleDM));
+  function toggleDM() {
+    var current = root.getAttribute('data-theme');
+    var next = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('im-theme', next);
+  }
 
-// Nav scroll
-const navEl = document.getElementById('mainNav');
-window.addEventListener('scroll', () => navEl && navEl.classList.toggle('scrolled', scrollY > 40));
+  // Wait for DOM then attach toggle listeners
+  document.addEventListener('DOMContentLoaded', function() {
 
-// Mobile menu
-const ham = document.getElementById('ham');
-const mob = document.getElementById('mobMenu');
-let mOpen = false;
-if (ham) ham.addEventListener('click', () => { mOpen = !mOpen; mob.classList.toggle('open', mOpen); });
-function closeMob() { mOpen = false; mob && mob.classList.remove('open'); }
-
-// Service tabs scroll sync
-const tabs = document.querySelectorAll('.stab');
-if (tabs.length) {
-  const secs = document.querySelectorAll('.svc-detail[id]');
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        tabs.forEach(t => t.classList.toggle('active', t.getAttribute('href') === '#' + e.target.id));
-      }
+    document.querySelectorAll('.dm-toggle').forEach(function(btn) {
+      btn.addEventListener('click', toggleDM);
     });
-  }, {rootMargin:'-50% 0px -50% 0px'});
-  secs.forEach(s => io.observe(s));
-  tabs.forEach(t => t.addEventListener('click', () => { tabs.forEach(x => x.classList.remove('active')); t.classList.add('active'); }));
-}
 
-// Contact form
-const cf = document.getElementById('cForm');
-if (cf) cf.addEventListener('submit', e => {
-  e.preventDefault();
-  const s = document.getElementById('cSuccess');
-  s.classList.add('show');
-  cf.reset();
-  setTimeout(() => s.classList.remove('show'), 5000);
-});
+    // ── 2. NAV SCROLL ──
+    var navEl = document.getElementById('mainNav');
+    window.addEventListener('scroll', function() {
+      if (navEl) navEl.classList.toggle('scrolled', window.scrollY > 40);
+    });
 
-// Ticker dupe
-const tr = document.querySelector('.ticker-track');
-if (tr) tr.innerHTML += tr.innerHTML;
-
-// Scroll reveal
-document.querySelectorAll('.stat,.svc-card,.ctile,.vcard,.sd-item,.mf-card,.tr-item,.why-item,.ci-card,.mc').forEach((el, i) => {
-  el.style.opacity = '0';
-  const io = new IntersectionObserver(([e]) => {
-    if (e.isIntersecting) {
-      el.style.animation = `fadeUp 0.5s ${i*0.04}s ease both`;
-      io.disconnect();
+    // ── 3. MOBILE MENU ──
+    var ham = document.getElementById('ham');
+    var mob = document.getElementById('mobMenu');
+    var mOpen = false;
+    if (ham) {
+      ham.addEventListener('click', function() {
+        mOpen = !mOpen;
+        if (mob) mob.classList.toggle('open', mOpen);
+      });
     }
-  }, {threshold: 0.1});
-  io.observe(el);
-});
-</script>
 
+    // ── 4. SERVICE TABS ──
+    var tabs = document.querySelectorAll('.stab');
+    if (tabs.length) {
+      var secs = document.querySelectorAll('.svc-detail[id]');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function(entries) {
+          entries.forEach(function(e) {
+            if (e.isIntersecting) {
+              tabs.forEach(function(t) {
+                t.classList.toggle('active', t.getAttribute('href') === '#' + e.target.id);
+              });
+            }
+          });
+        }, { rootMargin: '-50% 0px -50% 0px' });
+        secs.forEach(function(s) { io.observe(s); });
+      }
+      tabs.forEach(function(t) {
+        t.addEventListener('click', function() {
+          tabs.forEach(function(x) { x.classList.remove('active'); });
+          t.classList.add('active');
+        });
+      });
+    }
+
+    // ── 5. CONTACT FORM ──
+    var cf = document.getElementById('cForm');
+    if (cf) {
+      cf.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var s = document.getElementById('cSuccess');
+        if (s) { s.classList.add('show'); cf.reset(); setTimeout(function() { s.classList.remove('show'); }, 5000); }
+      });
+    }
+
+    // ── 6. NEWSLETTER FORM ──
+    var nf = document.getElementById('nlForm');
+    if (nf) {
+      nf.addEventListener('submit', function(e) {
+        e.preventDefault();
+        nf.innerHTML = '<p style="color:#fff;font-weight:600;font-size:1rem">&#127881; You\'re subscribed! Welcome to the Ivette Media community.</p>';
+      });
+    }
+
+    // ── 7. TICKER DUPLICATE ──
+    var tr = document.querySelector('.ticker-track');
+    if (tr) { tr.innerHTML += tr.innerHTML; }
+
+    // ── 8. SCROLL REVEAL ──
+    if ('IntersectionObserver' in window) {
+      var items = document.querySelectorAll('.stat,.svc-card,.ctile,.vcard,.sd-item,.mf-card,.tr-item,.why-item,.ci-card,.mc,.pcard,.tcard,.bcard,.faq-item');
+      var revealIO = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'translateY(0)';
+            revealIO.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08 });
+      items.forEach(function(el) {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        revealIO.observe(el);
+      });
+    }
+
+    // ── 9. FAQ ACCORDION ──
+    document.querySelectorAll('.faq-q').forEach(function(q) {
+      q.addEventListener('click', function() {
+        var item = q.parentElement;
+        var wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+        if (!wasOpen) item.classList.add('open');
+      });
+    });
+
+    // ── 10. FAQ CATEGORY FILTER ──
+    document.querySelectorAll('.faq-cat-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.faq-cat-btn').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var cat = btn.dataset.cat;
+        document.querySelectorAll('.faq-item').forEach(function(item) {
+          item.style.display = (cat === 'all' || item.dataset.cat === cat) ? '' : 'none';
+        });
+      });
+    });
+
+    // ── 11. PORTFOLIO FILTER ──
+    document.querySelectorAll('.pf-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.pf-btn').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var cat = btn.dataset.cat;
+        document.querySelectorAll('.pcard').forEach(function(card) {
+          card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+        });
+      });
+    });
+
+  }); // end DOMContentLoaded
+})();
+</script>
 </body>
 </html>
