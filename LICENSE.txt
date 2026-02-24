@@ -1,0 +1,85 @@
+PROPRIETARY SOFTWARE LICENSE
+============================
+
+Copyright (c) 2025 Ivette Media
+All Rights Reserved.
+
+Registered Business: Ivette Media
+Location: Nairobi, Kenya
+Contact: ivettemediake@gmail.com
+
+
+TERMS AND CONDITIONS
+--------------------
+
+1. OWNERSHIP
+   This website, including all HTML, CSS, JavaScript, images, text content,
+   branding, and design elements contained herein, is the exclusive intellectual
+   property of Ivette Media. All rights are reserved.
+
+2. PERMITTED USE
+   This software is licensed solely for use by Ivette Media and its authorised
+   representatives for the purpose of operating the official Ivette Media website.
+   Authorised users may:
+   a) Deploy and host this website on servers owned or leased by Ivette Media.
+   b) Make modifications to the content for the purposes of updating business
+      information, branding, or services offered by Ivette Media.
+   c) Create backup copies for disaster recovery and archival purposes.
+
+3. RESTRICTIONS
+   Without prior written permission from Ivette Media, no person or entity may:
+   a) Copy, reproduce, distribute, or redistribute this codebase or any portion
+      of it for commercial or non-commercial purposes.
+   b) Use this website template, design, or structure to create derivative works
+      for any third party.
+   c) Sublicense, sell, rent, lease, transfer, or otherwise make this software
+      available to any third party.
+   d) Remove, alter, or obscure any proprietary notices, branding, copyright
+      notices, or attribution contained within the files.
+   e) Reverse engineer, decompile, or disassemble any portion of the software
+      beyond what is reasonably necessary for personal study.
+
+4. THIRD-PARTY RESOURCES
+   This website makes use of the following third-party resources, which are
+   subject to their own respective licenses:
+
+   a) Google Fonts (Playfair Display, DM Sans)
+      Licensed under the SIL Open Font License (OFL) 1.1
+      https://fonts.google.com
+
+   b) Emoji / Unicode characters used as interface icons are standard Unicode
+      code points and are not subject to additional licensing.
+
+5. BRANDING AND TRADEMARKS
+   The name "Ivette Media", the Ivette Media logo, the tagline "Brands that
+   stick and click", and all associated brand assets are trademarks of
+   Ivette Media. They may not be used, reproduced, or imitated without express
+   written consent from Ivette Media.
+
+6. NO WARRANTY
+   THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
+   FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL IVETTE MEDIA
+   BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF
+   THIS SOFTWARE.
+
+7. GOVERNING LAW
+   This license shall be governed by and construed in accordance with the laws
+   of the Republic of Kenya. Any disputes arising under or in connection with
+   this license shall be subject to the exclusive jurisdiction of the courts
+   of Nairobi, Kenya.
+
+8. CONTACT FOR PERMISSIONS
+   To request permissions beyond the scope of this license, please contact:
+
+   Ivette Media
+   Email:  ivettemediake@gmail.com
+   Phone:  +254 726 95 33 09
+           +254 702 33 89 03
+   City:   Nairobi, Kenya
+
+
+────────────────────────────────────────────────
+© 2025 Ivette Media. All Rights Reserved.
+Brands that stick and click.
+────────────────────────────────────────────────
